@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header {
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
+        }
+
+        .mainThree {
+            height: 500px;
+            min-height: 500px;
+            max-height: 500px;
+        }
+
+        .footer {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+        }
+
+        body {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .middleLeftTopTwo {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .middleLeftBottomOne {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        .middleRowRightThree {
+            height: 166px;
+            min-height: 166px;
+            max-height: 166px;
+        }
+        .middleRowBottomFour {
+            height: 83px;
+            min-height: 83px;
+            max-height: 83px;
+        }
+        .middleTop {
+            height: 166px;
+            min-height: 166px;
+            max-height: 166px;
+        }
+        img{
+          width:100%
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--nav-->
+            <div class="col-md-12 randomColor header">
+<img src="images/header.jpg"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--main3,7,2-->
+            <div class="col-md-3 randomColor mainThree">
+              <div class="row">
+                  <div class="col-md-12 randomColor middleLeftTopTwo"><img src="images/left.jpg"/></div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 randomColor middleLeftTopTwo"></div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 randomColor middleLeftBottomOne"></div>
+              </div>
+            </div>
+            <div class="col-md-7 randomColor mainThree">
+<div class="row">
+  <div class="col-md-12 randomColor middleTop"></div>
+</div>
+<div class="row">
+  <div class="col-md-3 randomColor middleRowBottomFour"></div>
+  <div class="col-md-9 randomColor middleRowBottomFour"></div>
+</div>
+<div class="row">
+  <div class="col-md-3 randomColor middleRowBottomFour"></div>
+  <div class="col-md-9 randomColor middleRowBottomFour"></div>
+
+</div>
+<div class="row">
+  <div class="col-md-3 randomColor middleRowBottomFour"></div>
+  <div class="col-md-9 randomColor middleRowBottomFour"></div>
+
+</div>
+<div class="row">
+  <div class="col-md-3 randomColor middleRowBottomFour"></div>
+  <div class="col-md-9 randomColor middleRowBottomFour"></div>
+</div>
+
+            </div>
+            <div class="col-md-2 randomColor mainThree">
+              <div class="row">
+                  <div class="col-md-12 randomColor middleRowRightThree"></div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 randomColor middleRowRightThree"></div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 randomColor middleRowRightThree"></div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <!--footer-->
+            <div class="col-md-12 randomColor footer"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+
+</body>
+
+</html>
