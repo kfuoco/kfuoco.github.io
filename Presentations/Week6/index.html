@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presentation 6</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+                .header {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .middle {
+            height: 300px;
+            min-height: 300px;
+            max-height: 300px;
+        }
+
+        .middleBottom {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+          }
+          .footer {
+                height: 70px;
+                min-height: 70px;
+                max-height: 70px;
+              }
+              #pic1 {
+                  height: 50%;
+                  margin: 0 auto;
+                  display: block;
+                  padding-top: 15px; }
+                  #pic2 {
+                      height: 50%;
+                      margin: 0 auto;
+                      display: block;
+                      padding-top: 15px; }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 randomColor header"><h1>LARRY</h1> The Leaser</div>
+            <div class="col-md-2 randomColor header">Browse</div>
+            <div class="col-md-2 randomColor header">Promo</div>
+            <div class="col-md-2 randomColor header">Lease</div>
+            <div class="col-md-2 randomColor header">Contact</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 randomColor middle"><img src="images/image.png" /></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 randomColor middleBottom"><img src="images/image2.jpg" /></div>
+            <div class="col-md-7 randomColor middleBottom">The wireframe I came up with to solve Larry's website issues is organized and user friendly.
+            I included the nav bar right in the header. That way users will immediately see the options and where they need to go in the website.
+          A long image directly underneath the header makes the website appealing to the eye. As well, I included a small image underneath with
+        body text beside it. This makes users eyes flow to the body text because of the images appealing to them. Finally, I included social media links
+      to Facebook, Twitter and Instagram to direct customers.</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 randomColor footer"></div>
+            <div class="col-md-1 randomColor footer"><img src="images/fb.png" /></div>
+            <div class="col-md-1 randomColor footer"><img src="images/fb.png" /></div>
+            <div class="col-md-1 randomColor footer"><img src="images/fb.png" /></div>
+            <div class="col-md-6 randomColor footer">Find us on social media!</div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+</body>
+
+</html>
