@@ -46,6 +46,7 @@
 var myString = "a string";
 var myNumber = 2;
 var myVar = "2";
+var myBoolean = false;
 var myVar = "true";
 
 //array; declare with square brackets - round means call to function
@@ -56,13 +57,16 @@ var myFullArray = ["Calen","Nicole","Evan"];
 
 console.log(myFullArray[0]);
 console.log("myFullArray 2nd value = "+myFullArray[1]);
-
+//[] square brackets means that this is an array. {} curly brackets means a code block or an object. () round brackets execute an action.
 var myMixArray = [3,"David",false];
 myMixArray.push("another value");
 console.log("myMixArray values: "+myMixArray)
 
 //type, price, colour, mileage, fuelType, src
 //when a page loads, we go to a database and get some info about a car
+
+//property: value
+//key value pair
 var car = {
 type : "SUV",
 price : "$45000",
@@ -70,7 +74,7 @@ mileage : "24",
 colour : "magenta",
 fuelType : "electric",
 src : "images/car1.jpg",
-message : function(){
+message : function() {
   console.log("A car is useful");
 }
 }
